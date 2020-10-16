@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+}
+
+.background > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.start {
+  width: 150px;
+  height: 70px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #51c4a6;
+  font-size: 25px;
+  letter-spacing: -1px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.start::before {
+  width: 20px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  border-radius: 10px;
+}
+
+.timer {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  font-size: 25px;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 70px;
+  margin-top: 20px;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 25px;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.field {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.carrot {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  transform: translate(10px, 10px);
+  cursor: pointer;
+}
+
+.bug {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(300px, 200px);
+  cursor: pointer;
+}
+
+.end {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+}
+
+.end.on {
+  display: block;
+}
+
+.end div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.end .restart {
+  width: 150px;
+  height: 70px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #51c4a6;
+  font-size: 25px;
+  letter-spacing: -1px;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
